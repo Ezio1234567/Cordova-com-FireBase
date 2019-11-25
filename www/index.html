@@ -1,0 +1,47 @@
+<!DOCTYPE html public>
+<html>
+	<head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <title>Email e Senha Auth com Cordova + Firebase </title>
+
+        <script src = " https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js " > </script >
+        <script src = " https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js " > </script >
+		
+		<script src="firebaseAppInit.js"></script>
+		<script src="firebaseAuthFeatures.js"></script>
+		<script src="firebaseConfig.js"></script>
+		<script src="js/index.js"></script>
+
+    </head>
+    <body>
+
+        <h1>Auth Email com Cordova + Firebase</h1>
+
+        <fieldset>
+            <legend>Cadastrar-se</legend>
+            <label>Email</label><br/>
+            <input type="text" id="email"></input><br/>
+            <label>Senha</label><br/>
+            <input type="password" id="senha"></input><br/>
+            <button type="button" onclick="signup()">Cadastrar-se</button>
+            <button type="button" onclick="mudarSenha()">Mudar Senha</button>
+            <button type="button" onclick="login()">Login</button><br/>
+        </fieldset>
+
+        <br/>
+
+        <fieldset>
+            <legend>Informacoes...</legend>
+            <button type="button" onclick="showCurrentUser()">Consulta Usuario Logado</button>
+            <Label id="lbUserLoggedIn"></Label><br/>
+            <button type="button" onclick="logout()">Sair</button><br/>
+        </fieldset>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
